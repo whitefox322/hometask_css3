@@ -1,0 +1,265 @@
+html, body {
+	height: 100%;
+}
+
+html {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	background: linear-gradient(to right, #092152, #4865a1);
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+.wrapper:after {
+	content: "";
+	font-size: 0;
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+.top-menu {
+	background: linear-gradient(45deg, #f9c805, #a6f905);
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+	font-size: 0;
+	white-space: nowrap;
+}
+
+.ul-top {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: justify;
+	white-space: normal;
+	vertical-align: middle;		
+}
+
+.ul-top:before {
+	float: left;
+	content: '';
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+	font-size: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	display: inline-block;
+	white-space: normal;
+}
+
+.ul-top:after {
+	content: "";
+	font-size: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+	white-space: normal;
+}
+
+.li-top {
+	background-color: #e91fc7;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 40px 5px;
+	position: relative;
+}
+
+.a-top {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.ul-top-sub {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	display: inline-block;
+	width: 100%;
+	text-align: justify;
+	white-space: normal;
+	vertical-align: middle;		
+}
+
+.ul-top2 {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.li-top-mod {
+	background-color: #d79a25;
+	border-radius: 30px;
+	display: inline-block;
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 0;
+	padding: 15px 10px;
+	position: relative;
+}
+
+.li-top:hover {
+	background-color: #fb3fe9;
+}
+
+.li-top-mod:hover {
+	background-color: #f9bc47;
+}
+
+.li-side:active,
+.li-top:active,
+.li-top-mod:active {
+	box-shadow: inset 2px 2px 5px black;
+}
+
+.li-top:hover > .ul-top2 {
+	display: block;
+}
+
+.sidebar {
+	display: inline-block;
+	background: linear-gradient(to right, #092152, #4865a1);
+	float: left;
+	width: 250px;
+	text-align: center;
+}
+
+.h2 {
+	margin: 0;
+	padding: 10px;
+	color: #6fd4ce;
+	text-shadow: 1px 1px 0 white;
+}
+
+.ul-side {
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+	font-size: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.li-side {
+	background-color: silver;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 0;
+	border: 1px solid black;
+	width: 100%;
+	position: relative;
+	transition-property: width;
+	transition-duration: 1s;
+}
+
+.ul-side2 {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.li-side:hover {
+	width: 150%;
+}
+
+.li-side:hover > .ul-side2 {
+	display: block;
+}
+
+.content {
+	text-align: justify;
+	background-color: white;
+	padding-bottom: 100px;
+	margin-left: 250px;
+}
+
+.anime {
+	height: 60px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.anime-block {
+	height: 15px;
+	width: 15px;
+	background-color: red;
+	border: 2px solid black;
+	border-radius: 8px;
+	margin-left: 5px;
+	animation-name: circle;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+}
+
+.anime-block:hover {
+	animation-play-state: running;
+}
+
+@keyframes circle {
+	from {
+		margin-left: 5px;
+		height: 15px;
+		width: 15px;
+	}
+	50% {
+		height: 60px;
+		width: 60px;
+	}
+	to {
+		margin-left: 1000px;
+		height: 15px;
+		width: 15px;
+	}
+}
+
+.h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.p {
+	text-indent: 20px;
+	text-align: justify;
+	padding: 5px;
+}
+
+.footer {
+	text-align: center;
+	background-color: black;
+	color: white;
+	height: 100px;	
+	clear: both;
+	padding-top: 10px;
+}
